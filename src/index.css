@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .center {
+    @apply flex justify-center items-center;
+  }
+
+  .center-col {
+    @apply flex flex-col justify-center items-center;
+  }
+}
+
+@layer base {
+  * {
+    @apply font-poppins p-0 m-0 box-border outline-none;
+  }
+}
+
+.canvas {
+  transform: translateY(-50%) !important;
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 50px !important;
+  }
+  p {
+    font-size: 20px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .canvas {
+    transform: translateY(-53%) !important;
+  }
+}
+
+@media only screen and (max-width: 468px) {
+  .logo {
+    bottom: 20px !important;
+    top: auto !important;
+    left: auto !important;
+  }
+}
+
+.main {
+  /* background-image: url("https://res.cloudinary.com/dmceve2cp/image/upload/v1728403754/Image_20241008112327.jpg_gdovwp.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; */
+}
